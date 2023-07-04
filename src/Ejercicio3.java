@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class HoraMasUnSeg {
+public class Ejercicio3 {
     public static void main(String[] args) {
         Scanner ent = new Scanner(System.in);
 

@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class OrdenadorDeNumerosDescendente {
+public class Ejercicio1 {
     public static void main(String[] args) {
 
         Scanner ent = new Scanner(System.in);
