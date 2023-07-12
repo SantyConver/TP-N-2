@@ -1,33 +1,31 @@
 import java.util.Scanner;
 public class Ejercicio16 {
     public static void main(String[] args) {
-        int inicio, fin;
+        int veces;
         Scanner ent = new Scanner(System.in);
         System.out.print("Ingrese el mensaje a mostrar por pantalla: ");
         String mensaje = ent.nextLine();
 
-        System.out.print("Por favor ingrese el valor de \"inicio\": ");
-        inicio = ent.nextInt();
-
-        System.out.print("Por favor ingrese el valor de \"fin\": ");
-        fin = ent.nextInt();
+        System.out.print("Por favor ingrese el valor de \"veces\": ");
+        veces = ent.nextInt();
 
 
 
-        eco(inicio, fin, mensaje);
+
+        eco(veces, mensaje);
 
 
 
     }
 
 
-    public static void eco (int inicio, int fin, String mensaje){
+    public static void eco (int inicio, String mensaje){
 
-        while(inicio <= fin) {
-            System.out.print(mensaje+" ");
-            inicio ++;
-
+        for (int i = 0; i <= inicio; i++) {
+            System.out.print(mensaje + " ");
         }
+
+
 
         System.out.print("----------Fin del Programa----------");
 

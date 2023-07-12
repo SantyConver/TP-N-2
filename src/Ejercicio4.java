@@ -6,9 +6,11 @@ public class Ejercicio4 {
         int num, copia, inverso = 0, resto;
         Scanner ent = new Scanner(System.in);
 
-            System.out.print("Introduce un número15: ");
-            num = ent.nextInt();
 
+        do {
+            System.out.print("Introduce un número entre 0 y 9999: ");
+            num = ent.nextInt();
+        }while(num <0 || num >9999);
 
         copia = num;
         while (copia!=0){
