@@ -24,5 +24,6 @@ public class Ejercicio4 {
         }else{
             System.out.println("No es capicua");
         }
+        System.out.println("----------Fin del Programa----------");
     }
 }

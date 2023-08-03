@@ -58,6 +58,8 @@ public class Ejercicio6 {
             case 22 -> System.out.println(num+"O");
         }
 
+        System.out.println("----------Fin del Programa----------");
+
 
 
 

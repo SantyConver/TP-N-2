@@ -5,7 +5,7 @@ public class Ejercicio1 {
         Scanner ent = new Scanner(System.in);
         int num1, num2;
 
-        System.out.print("Ingrese un numero  : ");
+        System.out.print("Ingrese un numero : ");
         num1 = ent.nextInt();
         System.out.print("Ingrese otro numero: ");
         num2 = ent.nextInt();
@@ -16,7 +16,7 @@ public class Ejercicio1 {
         else{
             System.out.println(num1+", "+num2);
         }
-        System.out.println("--------El programa finalizo--------");
+        System.out.println("----------Fin del Programa----------");
 
 
 

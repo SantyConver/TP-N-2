@@ -2,44 +2,30 @@ import java.util.Scanner;
 public class Ejercicio14 {
     public static void main(String[] args) {
 
-        double valores, raices, sumaRaices = 0;
-        int contador = 0;
+        double valores, sumaValores = 0 , raices, sumaRaices = 0, promedio;
+        int contador = 1;
         Scanner entrada = new Scanner(System.in);
+
 
         System.out.print("Ingrese un numero entre 0 y 32,1: ");
         valores = entrada.nextInt();
+        sumaValores = sumaValores + valores;
+        while(valores > 0 && valores <= 32.1){
 
-        if(valores >32.1){
-            System.out.print("Por favor ignrese un numero entre 0 y 32,1: ");
             valores = entrada.nextInt();
-        }
-
-        if (valores >=0 && valores <=32.1){
-            do {
-
-                System.out.print("Ingrese un numero entre 0 y 32,1: ");
+            sumaValores = sumaValores + valores;
+            if(valores > 32.1){
+                System.out.print("\nPor favor ingrese un numero menor a 32,1: ");
                 valores = entrada.nextInt();
-                if (valores >32.1){
-                    System.out.print("Por favor ingrese un numero entre 0 y 32,1: ");
-                }
-
-                raices = Math.sqrt(valores);
-                System.out.println("La raiz cuadrada de "+valores+" es: "+raices);
-
-                sumaRaices = sumaRaices + raices;
-
-                contador++;
-                if (valores <0){
-                    System.out.println("la suma de los resultados de las raices es: "+sumaRaices);
-
-
-                }
-                //falta hacer la parte final de este ejercicio y probar como funciona.
-
-            } while (valores >= 0);
-
-
+            }
+            raices = Math.sqrt(valores);
+            sumaRaices = sumaRaices + raices;
+            contador ++;
         }
+        promedio = sumaValores/contador;
+        System.out.println("La suma de las raices cuadradas es : "+sumaRaices);
+        System.out.println("El promedio de los valores ingresados es: "+promedio);
 
+        System.out.println("----------Fin del Programa----------");
     }
 }

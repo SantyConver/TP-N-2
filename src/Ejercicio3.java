@@ -35,6 +35,6 @@ public class Ejercicio3 {
 
         }
         System.out.printf("La hora un segundo mas tarde es: [%02d:%02d:%02d]",horas, minutos, segundos);
-
+        System.out.println("----------Fin del Programa----------");
     }
 }
